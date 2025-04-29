@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import Footer from '../components/footer';
+import Footer from '../components/Footer'; // Capitalized Footer import
 import './contact.css';
 
 export default function Contact() {
@@ -17,7 +17,7 @@ export default function Contact() {
           transition={{ duration: 0.8 }}
         >
           <h1>Contact Us</h1>
-          <p>We'd love to hear from you! Reach out to us for any inquiries or assistance.</p>
+          <p>We&apos;d love to hear from you! Reach out to us for any inquiries or assistance.</p>
         </motion.div>
       </section>
 
@@ -76,7 +76,7 @@ export default function Contact() {
       </section>
 
       {/* Footer */}
-      <Footer />
+      <Footer /> {/* Corrected capitalization */}
     </main>
   );
 }
