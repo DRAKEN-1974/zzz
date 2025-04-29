@@ -1,19 +1,18 @@
 import Navbar from './components/Navbar';
-import footer from './components/footer';
+import Footer from './components/footer'; // Capitalized Footer component
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <body>
         <Navbar />
         {children}
-        <footer />
+        <Footer /> {/* Correctly capitalized */}
       </body>
-      
     </html>
   );
 }
