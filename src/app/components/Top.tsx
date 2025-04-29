@@ -18,7 +18,7 @@ const HeroSection = () => {
           <p className="hero-category">INNOVATIVE TRAINING</p>
           <h1 className="hero-title">Step into the World of K9 Excellence</h1>
           <p className="hero-description">
-            Unlock your dog's potential with expert training crafted for obedience, agility, and a stronger bond.
+            Unlock your dog&apos;s potential with expert training crafted for obedience, agility, and a stronger bond.
           </p>
           <button className="hero-btn">Explore Training Programs</button>
         </motion.div>
@@ -31,7 +31,8 @@ const HeroSection = () => {
           <Image
             src="/images/puppymain.jpg"
             alt="Hero Section Image"
-            fill
+            width={800} // Set a suitable width
+            height={500} // Set a suitable height
             style={{ objectFit: 'cover' }}
             priority
           />
