@@ -1,0 +1,122 @@
+.navbar {
+  width: 100%;
+  color: #3498db; /* Blue color for text */
+  z-index: 1000;
+  background-color: transparent;
+}
+
+.nav-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Added gap for proper spacing between "K9SCHOOLS" and "CLOSE" */
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0;
+}
+
+.menu-button span {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: currentColor;
+  transition: transform 0.3s ease;
+}
+
+.menu-button.open .hamburger span:first-child {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.menu-button.open .hamburger span:last-child {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  z-index: 999;
+  display: flex; /* Added to center content */
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+}
+
+.menu-content {
+  height: auto; /* Adjusted to fit centered content */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center; /* Center-align text */
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.menu-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.menu-links a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 768px) {
+  .menu-links a {
+      font-size: 2rem;
+  }
+
+  .nav-content {
+      padding: 1.5rem;
+  }
+}
