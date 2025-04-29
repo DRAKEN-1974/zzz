@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'; // Import Next.js Image component
 import './third.css'; // Import the CSS file for styling
 
 const criteriaData = {
@@ -7,7 +8,7 @@ const criteriaData = {
     'We are committed to providing a safe and positive environment for all dogs. Here are the requirements for acceptance into our programs:',
   points: [
     'Dogs must be in excellent overall health.',
-    "Owners must submit up-to-date vaccination records and health certificates.",
+    'Owners must submit up-to-date vaccination records and health certificates.',
     'Each dog must pass a temperament and behavior evaluation.',
   ],
   buttonText: 'Schedule an Assessment',
@@ -17,9 +18,11 @@ const Criteria = () => {
   return (
     <section className="criteria-section">
       <div className="criteria-image">
-        <img
+        <Image
           src="/images/k9image2.jpg" // Replace with your image path
           alt="Decorative dog element"
+          width={500} // Set a suitable width
+          height={300} // Set a suitable height
         />
       </div>
       <div className="criteria-content">
